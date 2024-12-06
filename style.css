@@ -1,0 +1,250 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.content{
+    width: 100%;
+    min-height: 100vh;
+    background: #F8F9FD;
+    padding: 20px 0;
+}
+.home_con{
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+}
+.home1{
+    width: 100%;
+    padding: 80px 40px;
+    background: white;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+img{
+    width: 100%;
+    display: block;
+}
+.header{
+    width: 100px;
+    margin: auto;
+}
+.title{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: #5C617E;
+    margin-bottom: 40px;
+}
+.text{
+    margin-top: 40px;
+    text-align: center;
+    font-family: Arial;
+    line-height: 150%;
+    font-size: 18px;
+}
+.link{
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Impact;
+    font-size: 26px;
+    margin: 40px auto 0 auto;
+    text-align: center;
+    color: #716DD6;
+}
+.sm_title{
+    text-align: center;
+    color: #9CCF96;
+    font-family: Arial;
+    font-size: 26px;
+    font-weight: bold;
+    display: block;
+    text-decoration: none;
+}
+.banner{
+    width: 100%;
+    position: relative;
+}
+.banner_mark{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,0.5);
+}
+.banner_text{
+    position: absolute;
+    color: white;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10%;
+}
+.banner_title{
+    font-size: 30px;
+    font-family: Impact;
+}
+.banner_des{
+    font-family: "Calibri Light";
+    font-size: 18px;
+    margin: 20px 0;
+}
+.banner_text button{
+    width: 150px;
+    height: 50px;
+    color: white;
+    background: #716DD6;
+    border-radius: 5px;
+    border: none;
+    transition: all 0.3s;
+}
+.banner_text button:hover{
+    background: white;
+    color: #716DD6;
+}
+.card_con{
+    width: 100%;
+    padding: 4vw 0;
+    background: #F8F9FD;
+
+}
+.card_list{
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1,fr);
+    grid-template-rows: auto;
+    grid-gap: 20px;
+}
+.card_img{
+    width: 180px;
+    height: 180px;
+    border-radius: 5px;
+    background-size: cover;
+}
+.list_left{
+    display: flex;
+    align-items: center;
+}
+.card_name{
+    font-weight: bold;
+    font-size: 18px;
+    font-family: "Calibri Light";
+    margin-left: 20px;
+}
+.card_list>div{
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card_list a{
+    text-decoration: none;
+    background: #716DD6;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-family: "Calibri Light";
+    border: 1px solid #716DD6;
+    transition: all 0.3s;
+}
+.card_list a:hover{
+    background: white;
+    color: #716DD6;
+}
+.card_img1{
+    background: url("./image/img3.jpg") no-repeat center;
+}
+.card_img2{
+    background: url("./image/img4.jpg") no-repeat center;
+}
+.card_img3{
+    background: url("./image/img5.jpg") no-repeat center;
+}
+.card_img4{
+    background: url("./image/img6.jpg") no-repeat center;
+}
+.detail_con{
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+}
+.detail_des{
+    font-family: "Calibri Light";
+    margin-top: 40px;
+    font-size: 20px;
+    line-height: 150%;
+}
+@media screen and (max-width: 768px){
+    .home_con{
+        width: 95%;
+    }
+    .home1{
+        padding: 40px 20px;
+    }
+    .title{
+        margin-bottom: 20px;
+    }
+    .text{
+        margin-top: 20px;
+    }
+    .banner_title{
+        font-size: 20px;
+    }
+    .banner_des{
+        margin: 10px 0;
+    }
+    .banner_text button{
+        width: 110px;
+        height: 40px;
+        color: white;
+        background: #716DD6;
+        border-radius: 5px;
+        border: none;
+        transition: all 0.3s;
+    }
+    .card_list{
+        width: 95%;
+        grid-gap: 10px;
+    }
+    .card_img{
+        width: 100px;
+        height: 100px;
+        border-radius: 5px;
+        background-size: cover;
+    }
+    .card_list a{
+        text-decoration: none;
+        background: #716DD6;
+        color: white;
+        padding: 10px 15px;
+        border-radius: 5px;
+        font-family: "Calibri Light";
+        border: 1px solid #716DD6;
+        transition: all 0.3s;
+        font-size: 12px;
+    }
+    .card_name{
+        font-size: 14px;
+    }
+    .card_list>div{
+        background: white;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .detail_con{
+        width: 95%;
+    }
+}
